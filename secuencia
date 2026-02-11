@@ -1,0 +1,13 @@
+Etapa 1, log de importaciones:
+
+Práctica 1: identificar situación del embarque
+- configurar columna estatus, eligiendo de una lista.
+- formato condicional para marcar la fila en rojo (retraso de 3 días en aduana
+
+Práctica 2: validación de datos por longitud de texto
+- Configura "No. Factura" para permitir solo códigos de 8 caracteres
+- En caso contrario, deberá marcar error.
+
+Práctica 3: Formato de cifras
+- Seleccionar valores y relleno degradado para indicar el embarque más caro de forma visual.
+-  
