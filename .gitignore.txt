@@ -1,0 +1,7 @@
+# Archivos temporales de Excel
+~$*.xlsx
+~$*.xls
+*.tmp
+
+# Archivos de recuperación
+*.xlk
