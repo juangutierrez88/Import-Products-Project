@@ -8,29 +8,30 @@ Etapa 1, log de importaciones:
 - Configura "No. Factura" para permitir solo códigos de 8 caracteres
 - En caso contrario, deberá marcar error.
 
-Práctica 3: Formato de cifras 
+* Práctica 3: Formato de cifras 
 - Seleccionar valores y relleno degradado para indicar el embarque más caro de forma visual. 
 - Esto indica el embarque más caro sin leer el número
 
-Práctica 4: Orden y limpieza
+* Práctica 4: Orden y limpieza
 - Convertir el rango de celdas en una tabla oficial de excel (seleccionar todo 
 y ctrl + T)
 - Aparecen flechas en los encabezados, incluir filtro por color
   > si hay 100 filas, filtrar solo las que se pusieron en tono rojo (aduana 
 con retraso)
 
-práctica extra: mensaje de error personalizado
-- En la columna de factura
-- dentro de validación de datos -> mensaje de error
-
 Etapa 2, Cruce de datos y auditoría
 
-Práctica 1: Dos pestañas, A: "Factura proveedor" (SKU y cantidad pedida), B: 
+* Práctica 1: Dos pestañas, A: "Factura proveedor" (SKU y cantidad pedida), B: 
 "Packing list" (SKU y cantidad recibida)
 - Masterizar: BUSCARV (VLOOKUP) o XLOOKUP, pestaña A trae la cantidad recibida 
 desde la pestaña B usando el SKU como llave
 - Crear una columna "Discrepancia", si la diferencia no es cero, la celda en 
 amarillo. 
+
+* Practica 2: Gestión de errores
+- Columna Estatus_revision
+- Condicional para: Si discrepancia es 0 -> "Ok"; diferente de 0 -> "Revisar 
+con proveedor"
 
 Etapa 3, Reporte de mejora continua
 - Preparar los datos (KPI de timepos).
