@@ -1,13 +1,55 @@
 Etapa 1, log de importaciones:
 
-Práctica 1: identificar situación del embarque
+* Práctica 1: identificar situación del embarque
 - configurar columna estatus, eligiendo de una lista.
 - formato condicional para marcar la fila en rojo (retraso de 3 días en aduana
 
-Práctica 2: validación de datos por longitud de texto
+* Práctica 2: validación de datos por longitud de texto
 - Configura "No. Factura" para permitir solo códigos de 8 caracteres
 - En caso contrario, deberá marcar error.
 
-Práctica 3: Formato de cifras
-- Seleccionar valores y relleno degradado para indicar el embarque más caro de forma visual.
--  
+Práctica 3: Formato de cifras 
+- Seleccionar valores y relleno degradado para indicar el embarque más caro de forma visual. 
+- Esto indica el embarque más caro sin leer el número
+
+Práctica 4: Orden y limpieza
+- Convertir el rango de celdas en una tabla oficial de excel (seleccionar todo 
+y ctrl + T)
+- Aparecen flechas en los encabezados, incluir filtro por color
+  > si hay 100 filas, filtrar solo las que se pusieron en tono rojo (aduana 
+con retraso)
+
+práctica extra: mensaje de error personalizado
+- En la columna de factura
+- dentro de validación de datos -> mensaje de error
+
+Etapa 2, Cruce de datos y auditoría
+
+Práctica 1: Dos pestañas, A: "Factura proveedor" (SKU y cantidad pedida), B: 
+"Packing list" (SKU y cantidad recibida)
+- Masterizar: BUSCARV (VLOOKUP) o XLOOKUP, pestaña A trae la cantidad recibida 
+desde la pestaña B usando el SKU como llave
+- Crear una columna "Discrepancia", si la diferencia no es cero, la celda en 
+amarillo. 
+
+Etapa 3, Reporte de mejora continua
+- Preparar los datos (KPI de timepos).
+  > Fecha de arribo
+  > Fecha de salida
+  > Agente aduanal (nombres genéricos)
+- Calcular el desempeño, crea columna "Días de despacho" con una diferencia.
+- Tabla dinámica
+  > Seleccionar la tabla
+  > Insertar/Tabla dinámica en una nueva hoja "Dashboard"
+  > Arrastrar "Agente aduanal" a "Filas"
+  > Arrastrar "Días de despacho" a "valores"
+  > NOTA: click en la flecha "suma de días de despacho"/Configuración de 
+valor/promedio
+- Grafico, insertar gráfico dinámico y elegir de barras
+
+Etapa 4, Automatización y Power BI (considerar bases de datos sucias)
+- Aprender a importar archivos de Excel a Power Query
+  > Limpiar espacios en blanco (TRIM)
+  > Cambiar formatos de moneda y fecha
+  > Combinar dos archivos diferentes en una consulta
+- Una vez limpio, "click en cerrar y cargar en Power BI"
