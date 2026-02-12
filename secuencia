@@ -34,17 +34,17 @@ amarillo.
 con proveedor"
 
 Etapa 3, Reporte de mejora continua
-- Preparar los datos (KPI de timepos).
-  > Fecha de arribo
-  > Fecha de salida
-  > Agente aduanal (nombres genéricos)
-- Calcular el desempeño, crea columna "Días de despacho" con una diferencia.
-- Tabla dinámica
-  > Seleccionar la tabla
-  > Insertar/Tabla dinámica en una nueva hoja "Dashboard"
-  > Arrastrar "Agente aduanal" a "Filas"
-  > Arrastrar "Días de despacho" a "valores"
-  > NOTA: click en la flecha "suma de días de despacho"/Configuración de 
+* - Preparar los datos (KPI de timepos).
+    > Fecha de arribo
+    > Fecha de salida
+    > Agente aduanal (nombres genéricos)
+* - Calcular el desempeño, crea columna "Días de despacho" con una diferencia.
+* - Tabla dinámica
+    > Seleccionar la tabla
+    > Insertar/Tabla dinámica en una nueva hoja "Dashboard"
+    > Arrastrar "Agente aduanal" a "Filas"
+    > Arrastrar "Días de despacho" a "valores"
+    > NOTA: click en la flecha "suma de días de despacho"/Configuración de 
 valor/promedio
 - Grafico, insertar gráfico dinámico y elegir de barras
 
