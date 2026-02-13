@@ -1,0 +1,45 @@
+Nivel 1: Fundamentos (Excel puro)
+Objetivo: Automatizar el control diario sin errores manuales.
+1. Limpieza de master de proveedores
+    Problema: Tienes 5,000 filas con nombres de proveedores escritos de formas diferentes ("PROV SA", "Prov S.A.", "PROV S.A.").
+    Tarea: Unificar usando funciones y Power Query.
+    Pregunta: ¿Cómo detectas duplicados ocultos?
+2. Alertas de retraso por incoterm
+    Problema: Los embarques FOB tardan más que los EXW. Necesitas una columna que marque "RETRASO" si: (Hoy - Fecha ETA) > 3 días.
+    Tarea: Fórmula con validación por incoterm.
+3. Calculadora de demurrage variable
+    Problema: Cada naviera tiene tarifas distintas por día de retraso (tabla aparte).
+    Tarea: Calcular costo total automáticamente combinando dos tablas.
+
+Nivel 2: Power Query (Automatización)
+Objetivo: Procesar archivos iguales que llegan cada semana.
+4. Consolidación de archivos semanales
+    Problema: Cada lunes recibes 4 archivos Excel (uno por puerto) con misma estructura.
+    Tarea: Crear una consulta en Power Query que los combine y añada columna "Puerto" automática.
+5. Limpieza de logs de aduana
+    Problema: El sistema aduanal exporta fechas en texto ("01/ene/2024") y números con punto decimal europeo.
+    Tarea: Transformar a formato fecha y número correcto en Power Query.
+6. Cruce maestro entre factura y pedido
+    Problema: Dos tablas: Pedidos (SKU, Cantidad) vs Facturas (SKU, Cantidad, Precio). Algunos SKU no coinciden.
+    Tarea: Combinar consultas para crear una tabla "Conciliación" con todas las columnas y detectar faltantes.
+
+Nivel 3: Power BI (Visualización estratégica)
+Objetivo: Dashboard ejecutivo para reunión semanal.
+7. Mapa de riesgo por país de origen
+    Problema: Los embarques desde China tardan más que desde México.
+    Tarea: Crear un gráfico de barras apiladas mostrando días promedio por país y agente aduanal.
+8. Semáforo de proveedores
+    Problema: Dirección quiere ver qué proveedores fallan más en calidad.
+    Tarea: Tarjeta con % de discrepancias + gráfico de embudo + segmentación por mes.
+9. Forecast de costos logísticos
+    Problema: Con los embarques en tránsito, estimar cuánto se pagará en demoras este mes.
+    Tarea: Medida DAX que calcule costo total proyectado según fecha estimada de arribo
+
+Nivel 4: Integración y automatización final
+Objetivo: Cerrar el ciclo sin tocar Excel manual.
+10. Reporte automático por correo
+    Problema: Cada lunes hay que enviar el dashboard a 5 gerentes.
+    Tarea: Configurar Power BI para actualizarse desde carpeta compartida y programar suscripción por correo.
+11. Control de cambios en partidas arancelarias
+    Problema: La aduana cambia códigos y algunos productos quedan mal clasificados.
+    Tarea: En Power Query, comparar contra una tabla maestra y marcar "REVISAR" si el código cambió respecto al mes pasado.
